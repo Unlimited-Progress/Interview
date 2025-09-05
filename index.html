@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传简历</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧内容 -->
+        <div class="left-section">
+            <h1>Finish! Upload Your Resume</h1>
+            <p>Upload your resume, the platform will help you parse and optimize, you can also skip this step</p>
+            <div class="illustration">
+            
+                <img src="images/resume-image.png" alt="简历上传插画" style="max-width: 100%; height: auto;" onerror="this.src='https://via.placeholder.com/763x569?text=请放置您的图片';">
+                
+            </div>
+        </div>
+
+        <!-- 右侧内容 -->
+        <div class="right-section">
+            <div class="upload-container">
+                <h2>Upload file</h2>
+                
+                <!-- 文件上传区域 -->
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="fileInput" accept=".pdf,.doc,.docx" style="display: none;">
+                    <!-- 符合Vector规格的图标：尺寸58x39，蓝色填充 -->
+
+                    <svg width="58" height="40" viewBox="0 0 58 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M46.7625 15.4334C45.1192 7.02406 37.7967 0.710938 29 0.710938C22.0158 0.710938 15.95 4.70844 12.9292 10.5584C5.655 11.3384 0 17.5541 0 25.0859C0 33.1541 6.50083 39.7109 14.5 39.7109H45.9167C52.5867 39.7109 58 34.2509 58 27.5234C58 21.0884 53.0458 15.8722 46.7625 15.4334ZM45.9167 34.8359H14.5C9.15917 34.8359 4.83333 30.4728 4.83333 25.0859C4.83333 20.0891 8.53083 15.9209 13.4367 15.4091L16.0225 15.1409L17.2308 12.8253C19.5267 8.36469 24.0217 5.58594 29 5.58594C35.3317 5.58594 40.7933 10.1197 42.0258 16.3841L42.7508 20.0403L46.4483 20.3084C50.2183 20.5522 53.1667 23.7453 53.1667 27.5234C53.1667 31.5453 49.9042 34.8359 45.9167 34.8359ZM19.3333 22.6484H25.4958V29.9609H32.5042V22.6484H38.6667L29 12.8984L19.3333 22.6484Z" fill="#1849D6" style="fill:#1849D6;fill:color(display-p3 0.0941 0.2863 0.8392);fill-opacity:1;"/>
+</svg>
+
+                    <p>Drag your resume file to this area, or click on the area to select the appropriate file to upload</p>
+                    <div id="fileNameDisplay" class="file-name"></div>
+                </div>
+
+                <!-- 按钮区域 -->
+                <div class="button-container">
+                    <button class="last-step-btn">Last step</button>
+                    <button class="finish-btn">Finish</button>
+                </div>
+
+                <!-- 进度条 -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-dot"></div>
+                        <div class="progress-dot active"></div>
+                        <div class="progress-dot active"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
